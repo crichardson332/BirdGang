@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--First-->
+        <!--Gang-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
                 <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModule="BirdGang" customModuleProvider="target" sceneMemberID="viewController">
@@ -41,13 +41,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="Gang" image="Gang" id="acW-dT-cKf"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="750" y="-320"/>
         </scene>
-        <!--Item-->
+        <!--Smash-->
         <scene sceneID="pVN-Rg-Apj">
             <objects>
                 <viewController id="DGU-T3-rRM" sceneMemberID="viewController">
@@ -57,13 +57,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Oxz-Hv-I62"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="XOi-AT-XGI"/>
+                    <tabBarItem key="tabBarItem" title="Smash" image="Smash" id="XOi-AT-XGI"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="63A-Y1-INT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1461" y="-321"/>
         </scene>
-        <!--Second-->
+        <!--Combos-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
                 <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="BirdGang" customModuleProvider="target" sceneMemberID="viewController">
@@ -94,7 +94,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Second" image="second" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="Combos" image="Combos" id="cPa-gy-q4n"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
@@ -113,15 +113,34 @@
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
                         <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
                         <segue destination="DGU-T3-rRM" kind="relationship" relationship="viewControllers" id="cnN-wG-oua"/>
+                        <segue destination="MVd-CQ-1A4" kind="relationship" relationship="viewControllers" id="6D0-kG-N57"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="0.0" y="0.0"/>
         </scene>
+        <!--Dish Controller-->
+        <scene sceneID="43o-p5-UGN">
+            <objects>
+                <viewController id="MVd-CQ-1A4" userLabel="Dish Controller" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IMJ-7t-dxq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Vzf-dC-YHW"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Dish" image="Dish" id="Lgt-O2-Lei"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wla-rK-duV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1460" y="359"/>
+        </scene>
     </scenes>
     <resources>
-        <image name="first" width="30" height="30"/>
-        <image name="second" width="30" height="30"/>
+        <image name="Combos" width="30" height="30"/>
+        <image name="Dish" width="30" height="30"/>
+        <image name="Gang" width="30" height="30"/>
+        <image name="Smash" width="30" height="30"/>
     </resources>
 </document>

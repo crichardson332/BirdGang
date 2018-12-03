@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		7195B55121B4BE78006F6FA3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7195B55021B4BE78006F6FA3 /* AppDelegate.swift */; };
-		7195B55321B4BE78006F6FA3 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7195B55221B4BE78006F6FA3 /* FirstViewController.swift */; };
-		7195B55521B4BE78006F6FA3 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7195B55421B4BE78006F6FA3 /* SecondViewController.swift */; };
+		7195B55321B4BE78006F6FA3 /* GangViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7195B55221B4BE78006F6FA3 /* GangViewController.swift */; };
+		7195B55521B4BE78006F6FA3 /* CombosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7195B55421B4BE78006F6FA3 /* CombosViewController.swift */; };
 		7195B55821B4BE78006F6FA3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7195B55621B4BE78006F6FA3 /* Main.storyboard */; };
 		7195B55A21B4BE78006F6FA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7195B55921B4BE78006F6FA3 /* Assets.xcassets */; };
 		7195B55D21B4BE78006F6FA3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7195B55B21B4BE78006F6FA3 /* LaunchScreen.storyboard */; };
 		7195B56821B4BE78006F6FA3 /* BirdGangTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7195B56721B4BE78006F6FA3 /* BirdGangTests.swift */; };
+		7195B57521B4C7C1006F6FA3 /* DishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7195B57421B4C7C1006F6FA3 /* DishViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,8 +30,8 @@
 /* Begin PBXFileReference section */
 		7195B54D21B4BE78006F6FA3 /* BirdGang.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BirdGang.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7195B55021B4BE78006F6FA3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7195B55221B4BE78006F6FA3 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		7195B55421B4BE78006F6FA3 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		7195B55221B4BE78006F6FA3 /* GangViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GangViewController.swift; sourceTree = "<group>"; };
+		7195B55421B4BE78006F6FA3 /* CombosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombosViewController.swift; sourceTree = "<group>"; };
 		7195B55721B4BE78006F6FA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7195B55921B4BE78006F6FA3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7195B55C21B4BE78006F6FA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -38,6 +39,7 @@
 		7195B56321B4BE78006F6FA3 /* BirdGangTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BirdGangTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7195B56721B4BE78006F6FA3 /* BirdGangTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirdGangTests.swift; sourceTree = "<group>"; };
 		7195B56921B4BE78006F6FA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7195B57421B4C7C1006F6FA3 /* DishViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,9 +81,10 @@
 		7195B54F21B4BE78006F6FA3 /* BirdGang */ = {
 			isa = PBXGroup;
 			children = (
+				7195B57421B4C7C1006F6FA3 /* DishViewController.swift */,
 				7195B55021B4BE78006F6FA3 /* AppDelegate.swift */,
-				7195B55221B4BE78006F6FA3 /* FirstViewController.swift */,
-				7195B55421B4BE78006F6FA3 /* SecondViewController.swift */,
+				7195B55221B4BE78006F6FA3 /* GangViewController.swift */,
+				7195B55421B4BE78006F6FA3 /* CombosViewController.swift */,
 				7195B55621B4BE78006F6FA3 /* Main.storyboard */,
 				7195B55921B4BE78006F6FA3 /* Assets.xcassets */,
 				7195B55B21B4BE78006F6FA3 /* LaunchScreen.storyboard */,
@@ -200,9 +203,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7195B55521B4BE78006F6FA3 /* SecondViewController.swift in Sources */,
+				7195B55521B4BE78006F6FA3 /* CombosViewController.swift in Sources */,
 				7195B55121B4BE78006F6FA3 /* AppDelegate.swift in Sources */,
-				7195B55321B4BE78006F6FA3 /* FirstViewController.swift in Sources */,
+				7195B57521B4C7C1006F6FA3 /* DishViewController.swift in Sources */,
+				7195B55321B4BE78006F6FA3 /* GangViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
