@@ -15,6 +15,7 @@
 		7195B55D21B4BE78006F6FA3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7195B55B21B4BE78006F6FA3 /* LaunchScreen.storyboard */; };
 		7195B56821B4BE78006F6FA3 /* BirdGangTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7195B56721B4BE78006F6FA3 /* BirdGangTests.swift */; };
 		7195B57521B4C7C1006F6FA3 /* DishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7195B57421B4C7C1006F6FA3 /* DishViewController.swift */; };
+		7195B57721B4CCF5006F6FA3 /* SmashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7195B57621B4CCF5006F6FA3 /* SmashViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		7195B56721B4BE78006F6FA3 /* BirdGangTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirdGangTests.swift; sourceTree = "<group>"; };
 		7195B56921B4BE78006F6FA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7195B57421B4C7C1006F6FA3 /* DishViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishViewController.swift; sourceTree = "<group>"; };
+		7195B57621B4CCF5006F6FA3 /* SmashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmashViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 				7195B55921B4BE78006F6FA3 /* Assets.xcassets */,
 				7195B55B21B4BE78006F6FA3 /* LaunchScreen.storyboard */,
 				7195B55E21B4BE78006F6FA3 /* Info.plist */,
+				7195B57621B4CCF5006F6FA3 /* SmashViewController.swift */,
 			);
 			path = BirdGang;
 			sourceTree = "<group>";
@@ -204,6 +207,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7195B55521B4BE78006F6FA3 /* CombosViewController.swift in Sources */,
+				7195B57721B4CCF5006F6FA3 /* SmashViewController.swift in Sources */,
 				7195B55121B4BE78006F6FA3 /* AppDelegate.swift in Sources */,
 				7195B57521B4C7C1006F6FA3 /* DishViewController.swift in Sources */,
 				7195B55321B4BE78006F6FA3 /* GangViewController.swift in Sources */,
