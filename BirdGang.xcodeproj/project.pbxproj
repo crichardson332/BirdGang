@@ -17,6 +17,7 @@
 		7195B56821B4BE78006F6FA3 /* BirdGangTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7195B56721B4BE78006F6FA3 /* BirdGangTests.swift */; };
 		7195B57521B4C7C1006F6FA3 /* DishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7195B57421B4C7C1006F6FA3 /* DishViewController.swift */; };
 		7195B57721B4CCF5006F6FA3 /* SmashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7195B57621B4CCF5006F6FA3 /* SmashViewController.swift */; };
+		7CE6B3F2B3627A4D209484D9 /* libPods-BirdGang.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4907A91777568EFD508E240C /* libPods-BirdGang.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,6 +31,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4907A91777568EFD508E240C /* libPods-BirdGang.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BirdGang.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		575FB7337D71E5A7DA520018 /* Pods-BirdGang.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BirdGang.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BirdGang/Pods-BirdGang.debug.xcconfig"; sourceTree = "<group>"; };
 		7174EE1321B5FC450029CE93 /* GoingOutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoingOutViewController.swift; sourceTree = "<group>"; };
 		7195B54D21B4BE78006F6FA3 /* BirdGang.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BirdGang.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7195B55021B4BE78006F6FA3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -44,6 +47,7 @@
 		7195B56921B4BE78006F6FA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7195B57421B4C7C1006F6FA3 /* DishViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishViewController.swift; sourceTree = "<group>"; };
 		7195B57621B4CCF5006F6FA3 /* SmashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmashViewController.swift; sourceTree = "<group>"; };
+		9034400E15B838C58B94E7B2 /* Pods-BirdGang.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BirdGang.release.xcconfig"; path = "Pods/Target Support Files/Pods-BirdGang/Pods-BirdGang.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7CE6B3F2B3627A4D209484D9 /* libPods-BirdGang.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,12 +69,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		09AA497488431E877D90C03F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				575FB7337D71E5A7DA520018 /* Pods-BirdGang.debug.xcconfig */,
+				9034400E15B838C58B94E7B2 /* Pods-BirdGang.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		7195B54421B4BE78006F6FA3 = {
 			isa = PBXGroup;
 			children = (
 				7195B54F21B4BE78006F6FA3 /* BirdGang */,
 				7195B56621B4BE78006F6FA3 /* BirdGangTests */,
 				7195B54E21B4BE78006F6FA3 /* Products */,
+				09AA497488431E877D90C03F /* Pods */,
+				7F0C1C72134CF39BD2FDAEAE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -108,6 +124,14 @@
 			path = BirdGangTests;
 			sourceTree = "<group>";
 		};
+		7F0C1C72134CF39BD2FDAEAE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4907A91777568EFD508E240C /* libPods-BirdGang.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -115,9 +139,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7195B56C21B4BE78006F6FA3 /* Build configuration list for PBXNativeTarget "BirdGang" */;
 			buildPhases = (
+				FBF7D3CC03E997B33A2F662E /* [CP] Check Pods Manifest.lock */,
 				7195B54921B4BE78006F6FA3 /* Sources */,
 				7195B54A21B4BE78006F6FA3 /* Frameworks */,
 				7195B54B21B4BE78006F6FA3 /* Resources */,
+				9D9F09450412B0477D695D91 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -203,6 +229,55 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9D9F09450412B0477D695D91 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-BirdGang/Pods-BirdGang-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BirdGang/Pods-BirdGang-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FBF7D3CC03E997B33A2F662E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BirdGang-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7195B54921B4BE78006F6FA3 /* Sources */ = {
@@ -374,6 +449,7 @@
 		};
 		7195B56D21B4BE78006F6FA3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 575FB7337D71E5A7DA520018 /* Pods-BirdGang.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -392,6 +468,7 @@
 		};
 		7195B56E21B4BE78006F6FA3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9034400E15B838C58B94E7B2 /* Pods-BirdGang.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
