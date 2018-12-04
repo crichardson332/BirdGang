@@ -1,0 +1,6 @@
+module Pods_BirdGang {
+  umbrella header "Pods-BirdGang-umbrella.h"
+
+  export *
+  module * { export * }
+}
