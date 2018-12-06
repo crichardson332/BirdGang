@@ -17,9 +17,10 @@ class GoingOutViewController: UIViewController {
         super.viewDidLoad()
         // set initial location to Publico
         let initialLocation = CLLocation(latitude: 33.784824, longitude: -84.384605)
+        let labelLocation = CLLocationCoordinate2D(latitude: 33.784824, longitude: -84.384605)
         centerMapOnLocation(location: initialLocation)
         let annotation = MKPointAnnotation()
-        annotation.coordinate = location
+        annotation.coordinate = labelLocation
         annotation.title = "Publico"
         annotation.subtitle = "Atlanta"
         mapView.addAnnotation(annotation)

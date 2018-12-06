@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		714B01FC21B94CC00044F12C /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714B01FB21B94CC00044F12C /* PageViewController.swift */; };
 		7174EE1421B5FC450029CE93 /* GoingOutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7174EE1321B5FC450029CE93 /* GoingOutViewController.swift */; };
 		7195B55121B4BE78006F6FA3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7195B55021B4BE78006F6FA3 /* AppDelegate.swift */; };
 		7195B55321B4BE78006F6FA3 /* GangViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7195B55221B4BE78006F6FA3 /* GangViewController.swift */; };
@@ -33,6 +34,7 @@
 /* Begin PBXFileReference section */
 		4907A91777568EFD508E240C /* libPods-BirdGang.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BirdGang.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		575FB7337D71E5A7DA520018 /* Pods-BirdGang.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BirdGang.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BirdGang/Pods-BirdGang.debug.xcconfig"; sourceTree = "<group>"; };
+		714B01FB21B94CC00044F12C /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		7174EE1321B5FC450029CE93 /* GoingOutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoingOutViewController.swift; sourceTree = "<group>"; };
 		7195B54D21B4BE78006F6FA3 /* BirdGang.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BirdGang.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7195B55021B4BE78006F6FA3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 				7195B55E21B4BE78006F6FA3 /* Info.plist */,
 				7195B57621B4CCF5006F6FA3 /* SmashViewController.swift */,
 				7174EE1321B5FC450029CE93 /* GoingOutViewController.swift */,
+				714B01FB21B94CC00044F12C /* PageViewController.swift */,
 			);
 			path = BirdGang;
 			sourceTree = "<group>";
@@ -285,6 +288,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7195B55521B4BE78006F6FA3 /* CombosViewController.swift in Sources */,
+				714B01FC21B94CC00044F12C /* PageViewController.swift in Sources */,
 				7195B57721B4CCF5006F6FA3 /* SmashViewController.swift in Sources */,
 				7174EE1421B5FC450029CE93 /* GoingOutViewController.swift in Sources */,
 				7195B55121B4BE78006F6FA3 /* AppDelegate.swift in Sources */,

@@ -70,10 +70,24 @@
                     <view key="view" contentMode="scaleToFill" id="dFv-2l-sle">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="caT-cr-r7r">
+                                <rect key="frame" x="0.0" y="44" width="375" height="685"/>
+                            </mapView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ana-cv-9le" firstAttribute="trailing" secondItem="caT-cr-r7r" secondAttribute="trailing" id="1Gx-r7-0kX"/>
+                            <constraint firstItem="caT-cr-r7r" firstAttribute="leading" secondItem="ana-cv-9le" secondAttribute="leading" id="LPW-Rj-Lc2"/>
+                            <constraint firstItem="caT-cr-r7r" firstAttribute="top" secondItem="ana-cv-9le" secondAttribute="top" id="Nn7-PU-2oc"/>
+                            <constraint firstItem="ana-cv-9le" firstAttribute="bottom" secondItem="caT-cr-r7r" secondAttribute="bottom" id="d1s-UI-Ygb"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="ana-cv-9le"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Going Out" image="GoingOut" id="wLs-Tn-5ba"/>
+                    <connections>
+                        <outlet property="mapView" destination="caT-cr-r7r" id="QI7-F2-JnL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="buF-9T-WP5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -107,19 +121,35 @@
                     <view key="view" contentMode="scaleToFill" id="IMJ-7t-dxq">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rbq-Of-hEx">
+                                <rect key="frame" x="0.0" y="44" width="375" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="KGp-kx-9OK"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="Zxo-0m-XvO" kind="embed" id="vRa-AO-Iu5"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Rbq-Of-hEx" firstAttribute="leading" secondItem="Khq-nG-k8C" secondAttribute="leading" id="U7E-oa-HZB"/>
+                            <constraint firstItem="Rbq-Of-hEx" firstAttribute="trailing" secondItem="Khq-nG-k8C" secondAttribute="trailing" id="VgA-qb-67G"/>
+                            <constraint firstItem="Rbq-Of-hEx" firstAttribute="top" secondItem="Khq-nG-k8C" secondAttribute="top" id="gr3-hA-Kjw"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Khq-nG-k8C"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Dish" image="Dish" id="Lgt-O2-Lei"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wla-rK-duV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1460" y="358.4707646176912"/>
+            <point key="canvasLocation" x="1460" y="358.37438423645324"/>
         </scene>
         <!--Combos-->
         <scene sceneID="ixA-Uc-Np9">
             <objects>
-                <viewController id="UK4-JW-yUX" userLabel="Combos" customClass="ViewController" customModule="Charts_Examples" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="UK4-JW-yUX" userLabel="Combos" customClass="ViewController" customModule="BirdGang" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PeT-gA-5Br">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -188,6 +218,78 @@
             </objects>
             <point key="canvasLocation" x="750" y="358"/>
         </scene>
+        <!--Page Controller-->
+        <scene sceneID="6Ml-dU-nTF">
+            <objects>
+                <viewController modalTransitionStyle="crossDissolve" modalPresentationStyle="currentContext" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Zxo-0m-XvO" userLabel="Page Controller" customClass="PageViewController" customModule="BirdGang" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mIO-Hu-LNA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="Lh5-7e-BBX">
+                                <rect key="frame" x="233" y="178" width="39" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </pageControl>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yrF-T9-TVK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2222" y="358"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="FAO-vd-jrg">
+            <objects>
+                <viewController storyboardIdentifier="FoxViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="tLr-Nr-MV2" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZU4-b5-eHh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fox_300" translatesAutoresizingMaskIntoConstraints="NO" id="rxN-u7-EYE">
+                                <rect key="frame" x="0.0" y="44" width="375" height="734"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="rxN-u7-EYE" firstAttribute="leading" secondItem="bQR-qS-PuW" secondAttribute="leading" id="65h-2B-pA9"/>
+                            <constraint firstItem="rxN-u7-EYE" firstAttribute="trailing" secondItem="bQR-qS-PuW" secondAttribute="trailing" id="8e0-aQ-6C1"/>
+                            <constraint firstItem="rxN-u7-EYE" firstAttribute="bottom" secondItem="bQR-qS-PuW" secondAttribute="bottom" id="b0e-FX-wei"/>
+                            <constraint firstItem="rxN-u7-EYE" firstAttribute="top" secondItem="bQR-qS-PuW" secondAttribute="top" id="hmQ-Im-HgY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="bQR-qS-PuW"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yxh-Hl-kkq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2220" y="873"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="oHF-C3-F76">
+            <objects>
+                <viewController storyboardIdentifier="SmashViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="dy4-mT-4sN" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fnr-mP-Skj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="smash_300" translatesAutoresizingMaskIntoConstraints="NO" id="R73-kz-CJk">
+                                <rect key="frame" x="0.0" y="44" width="375" height="734"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="R73-kz-CJk" firstAttribute="leading" secondItem="Pst-IZ-WFg" secondAttribute="leading" id="6kc-oz-eUA"/>
+                            <constraint firstItem="R73-kz-CJk" firstAttribute="top" secondItem="Pst-IZ-WFg" secondAttribute="top" id="Yh1-PA-Dxc"/>
+                            <constraint firstItem="Pst-IZ-WFg" firstAttribute="trailing" secondItem="R73-kz-CJk" secondAttribute="trailing" id="h6U-V3-7fH"/>
+                            <constraint firstItem="Pst-IZ-WFg" firstAttribute="bottom" secondItem="R73-kz-CJk" secondAttribute="bottom" id="kO2-Su-6JR"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Pst-IZ-WFg"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xy5-oQ-cJl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2905" y="873"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Combos" width="30" height="30"/>
@@ -195,5 +297,7 @@
         <image name="Gang" width="30" height="30"/>
         <image name="GoingOut" width="30" height="30"/>
         <image name="Smash" width="30" height="30"/>
+        <image name="fox_300" width="300" height="300"/>
+        <image name="smash_300" width="300" height="300"/>
     </resources>
 </document>
