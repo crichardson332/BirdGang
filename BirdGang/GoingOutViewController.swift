@@ -7,42 +7,30 @@
 //
 
 import UIKit
-import GoogleMaps
+import MapKit
 
 class GoingOutViewController: UIViewController {
 
+    @IBOutlet weak var mapView: MKMapView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        // set initial location to Publico
+        let initialLocation = CLLocation(latitude: 33.784824, longitude: -84.384605)
+        centerMapOnLocation(location: initialLocation)
+        let annotation = MKPointAnnotation()
+        annotation.coordinate = location
+        annotation.title = "Publico"
+        annotation.subtitle = "Atlanta"
+        mapView.addAnnotation(annotation)
     }
 
-    override func loadView() {
-        // Create a GMSCameraPosition that tells the map to display the
-        // coordinate -33.86,151.20 at zoom level 6.
-        let camera = GMSCameraPosition.camera(withLatitude: 33.785, longitude: -84.385, zoom: 15.0)
-        // let camera = GMSCameraPosition.camera(withLatitude: -33.86, longitude: 151.20, zoom: 6.0)
-        let mapView = GMSMapView.map(withFrame: CGRect.zero, camera: camera)
-        view = mapView
-
-        // Creates a marker in the center of the map.
-        let marker = GMSMarker()
-        marker.position = CLLocationCoordinate2D(latitude: 33.785, longitude: -84.385)
-        // marker.position = CLLocationCoordinate2D(latitude: -33.86, longitude: 151.20)
-        marker.title = "Publico"
-        marker.snippet = "Atlanta"
-        marker.map = mapView
+    // map size
+    let regionRadius: CLLocationDistance = 1000
+    
+    func centerMapOnLocation(location: CLLocation) {
+        let coordinateRegion = MKCoordinateRegion(center: location.coordinate,latitudinalMeters: regionRadius, longitudinalMeters: regionRadius)
+        mapView.setRegion(coordinateRegion, animated: true)
     }
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
