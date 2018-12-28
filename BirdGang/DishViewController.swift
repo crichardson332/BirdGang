@@ -10,7 +10,7 @@ import UIKit
 
 class DishViewController: UIViewController {
 
-    @IBOutlet weak var scrollView: UIScrollView!
+
     
     override func viewDidLoad() {
         super.viewDidLoad()

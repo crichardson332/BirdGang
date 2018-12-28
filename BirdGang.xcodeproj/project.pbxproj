@@ -16,7 +16,6 @@
 		7195B55A21B4BE78006F6FA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7195B55921B4BE78006F6FA3 /* Assets.xcassets */; };
 		7195B55D21B4BE78006F6FA3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7195B55B21B4BE78006F6FA3 /* LaunchScreen.storyboard */; };
 		7195B56821B4BE78006F6FA3 /* BirdGangTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7195B56721B4BE78006F6FA3 /* BirdGangTests.swift */; };
-		7195B57521B4C7C1006F6FA3 /* DishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7195B57421B4C7C1006F6FA3 /* DishViewController.swift */; };
 		7195B57721B4CCF5006F6FA3 /* SmashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7195B57621B4CCF5006F6FA3 /* SmashViewController.swift */; };
 		7CE6B3F2B3627A4D209484D9 /* libPods-BirdGang.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4907A91777568EFD508E240C /* libPods-BirdGang.a */; };
 		F20CF36921D444C7002B62FA /* CapitalsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20CF36821D444C7002B62FA /* CapitalsViewController.swift */; };
@@ -48,7 +47,6 @@
 		7195B56321B4BE78006F6FA3 /* BirdGangTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BirdGangTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7195B56721B4BE78006F6FA3 /* BirdGangTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirdGangTests.swift; sourceTree = "<group>"; };
 		7195B56921B4BE78006F6FA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7195B57421B4C7C1006F6FA3 /* DishViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishViewController.swift; sourceTree = "<group>"; };
 		7195B57621B4CCF5006F6FA3 /* SmashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmashViewController.swift; sourceTree = "<group>"; };
 		9034400E15B838C58B94E7B2 /* Pods-BirdGang.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BirdGang.release.xcconfig"; path = "Pods/Target Support Files/Pods-BirdGang/Pods-BirdGang.release.xcconfig"; sourceTree = "<group>"; };
 		F20CF36821D444C7002B62FA /* CapitalsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CapitalsViewController.swift; path = ../../Desktop/Coding/Capitals/Capitals/CapitalsViewController.swift; sourceTree = "<group>"; };
@@ -105,7 +103,6 @@
 		7195B54F21B4BE78006F6FA3 /* BirdGang */ = {
 			isa = PBXGroup;
 			children = (
-				7195B57421B4C7C1006F6FA3 /* DishViewController.swift */,
 				F20CF36821D444C7002B62FA /* CapitalsViewController.swift */,
 				7195B55021B4BE78006F6FA3 /* AppDelegate.swift */,
 				7195B55221B4BE78006F6FA3 /* GangViewController.swift */,
@@ -295,7 +292,6 @@
 				7195B57721B4CCF5006F6FA3 /* SmashViewController.swift in Sources */,
 				7174EE1421B5FC450029CE93 /* GoingOutViewController.swift in Sources */,
 				7195B55121B4BE78006F6FA3 /* AppDelegate.swift in Sources */,
-				7195B57521B4C7C1006F6FA3 /* DishViewController.swift in Sources */,
 				7195B55321B4BE78006F6FA3 /* GangViewController.swift in Sources */,
 				F20CF36921D444C7002B62FA /* CapitalsViewController.swift in Sources */,
 			);
@@ -461,13 +457,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = WQ3Z6M7DVG;
+				DEVELOPMENT_TEAM = 2D3PYM39VW;
 				INFOPLIST_FILE = BirdGang/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.BirdGang;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.BirdGang2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -480,13 +476,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = WQ3Z6M7DVG;
+				DEVELOPMENT_TEAM = 2D3PYM39VW;
 				INFOPLIST_FILE = BirdGang/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.BirdGang;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.BirdGang2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
