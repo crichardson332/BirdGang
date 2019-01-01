@@ -24,7 +24,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="63A-Y1-INT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1460" y="-321.58920539730138"/>
+            <point key="canvasLocation" x="1396" y="-384"/>
         </scene>
         <!--Going Out-->
         <scene sceneID="1Db-cE-Dd4">
@@ -34,27 +34,101 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="caT-cr-r7r">
-                                <rect key="frame" x="0.0" y="44" width="375" height="685"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LcJ-ba-u4M">
+                                <rect key="frame" x="20" y="248" width="335" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="Ug2-Zs-Rp4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <state key="normal" title="Map"/>
+                                <connections>
+                                    <segue destination="aPq-KE-IFs" kind="show" id="Gwa-pH-LR2"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Going Out" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PKI-Hk-Ndv">
+                                <rect key="frame" x="20" y="108" width="335" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="jvi-G6-qKl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gzY-Om-sCi">
+                                <rect key="frame" x="20" y="198" width="335" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="izj-WS-8Bf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <state key="normal" title="Passbook"/>
+                                <connections>
+                                    <segue destination="hwr-sR-fUv" kind="show" id="amQ-b4-ldx"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="PKI-Hk-Ndv" firstAttribute="leading" secondItem="ana-cv-9le" secondAttribute="leading" constant="20" id="8cu-rE-1rU"/>
+                            <constraint firstItem="ana-cv-9le" firstAttribute="trailing" secondItem="gzY-Om-sCi" secondAttribute="trailing" constant="20" id="E1Q-tZ-89S"/>
+                            <constraint firstItem="ana-cv-9le" firstAttribute="trailing" secondItem="LcJ-ba-u4M" secondAttribute="trailing" constant="20" id="Iwy-7b-TUK"/>
+                            <constraint firstItem="gzY-Om-sCi" firstAttribute="top" secondItem="PKI-Hk-Ndv" secondAttribute="bottom" constant="40" id="OOh-u4-hxx"/>
+                            <constraint firstItem="LcJ-ba-u4M" firstAttribute="top" secondItem="gzY-Om-sCi" secondAttribute="bottom" constant="30" id="Pok-Di-S2s"/>
+                            <constraint firstItem="PKI-Hk-Ndv" firstAttribute="top" secondItem="ana-cv-9le" secondAttribute="top" constant="20" id="Rsm-o4-4lJ"/>
+                            <constraint firstItem="LcJ-ba-u4M" firstAttribute="leading" secondItem="ana-cv-9le" secondAttribute="leading" constant="20" id="box-gI-yMu"/>
+                            <constraint firstItem="gzY-Om-sCi" firstAttribute="leading" secondItem="ana-cv-9le" secondAttribute="leading" constant="20" id="yRD-Mx-jeS"/>
+                            <constraint firstItem="ana-cv-9le" firstAttribute="trailing" secondItem="PKI-Hk-Ndv" secondAttribute="trailing" constant="20" id="ytq-Pt-xER"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ana-cv-9le"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="5uo-3Y-dbw"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="buF-9T-WP5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2902" y="58"/>
+        </scene>
+        <!--Map View Controller-->
+        <scene sceneID="ufH-fT-Tyd">
+            <objects>
+                <viewController id="aPq-KE-IFs" customClass="MapViewController" customModule="BirdGang" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6zw-ve-3tg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="DJr-QQ-3kQ">
+                                <rect key="frame" x="0.0" y="88" width="375" height="641"/>
                             </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="ana-cv-9le" firstAttribute="trailing" secondItem="caT-cr-r7r" secondAttribute="trailing" id="1Gx-r7-0kX"/>
-                            <constraint firstItem="caT-cr-r7r" firstAttribute="leading" secondItem="ana-cv-9le" secondAttribute="leading" id="LPW-Rj-Lc2"/>
-                            <constraint firstItem="caT-cr-r7r" firstAttribute="top" secondItem="ana-cv-9le" secondAttribute="top" id="Nn7-PU-2oc"/>
-                            <constraint firstItem="ana-cv-9le" firstAttribute="bottom" secondItem="caT-cr-r7r" secondAttribute="bottom" id="d1s-UI-Ygb"/>
+                            <constraint firstItem="NhH-84-5IK" firstAttribute="bottom" secondItem="DJr-QQ-3kQ" secondAttribute="bottom" id="Qtp-vY-Tc4"/>
+                            <constraint firstItem="NhH-84-5IK" firstAttribute="trailing" secondItem="DJr-QQ-3kQ" secondAttribute="trailing" id="SSo-VD-mA6"/>
+                            <constraint firstItem="DJr-QQ-3kQ" firstAttribute="leading" secondItem="NhH-84-5IK" secondAttribute="leading" id="gjF-Vl-MGB"/>
+                            <constraint firstItem="DJr-QQ-3kQ" firstAttribute="top" secondItem="NhH-84-5IK" secondAttribute="top" id="vY6-wN-j5m"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="ana-cv-9le"/>
+                        <viewLayoutGuide key="safeArea" id="NhH-84-5IK"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Going Out" image="GoingOut" id="wLs-Tn-5ba"/>
                     <connections>
-                        <outlet property="mapView" destination="caT-cr-r7r" id="QI7-F2-JnL"/>
+                        <outlet property="mapView" destination="DJr-QQ-3kQ" id="eTu-CW-NP9"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="buF-9T-WP5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sN0-WX-YJy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2159" y="-321"/>
+            <point key="canvasLocation" x="3820" y="413"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="XDd-Vq-NoD">
+            <objects>
+                <viewController id="hwr-sR-fUv" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QaF-rF-iox">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="6cx-qC-TMb"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="liC-gO-qmT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3820" y="-253"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -69,7 +143,7 @@
                         <segue destination="zz8-zD-iHt" kind="relationship" relationship="viewControllers" id="03D-ho-KAO"/>
                         <segue destination="UK4-JW-yUX" kind="relationship" relationship="viewControllers" id="Z1W-sm-CYV"/>
                         <segue destination="DGU-T3-rRM" kind="relationship" relationship="viewControllers" id="JG5-CY-BND"/>
-                        <segue destination="bRg-eg-LlQ" kind="relationship" relationship="viewControllers" id="njc-Rq-obH"/>
+                        <segue destination="h8H-2W-rsx" kind="relationship" relationship="viewControllers" id="njc-Rq-obH"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
@@ -146,7 +220,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bZE-0v-B0O" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="750" y="358"/>
+            <point key="canvasLocation" x="750" y="391"/>
         </scene>
         <!--Capitals-->
         <scene sceneID="hxc-Ff-TMc">
@@ -227,6 +301,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rf5-Xl-oxP" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="750" y="-732"/>
+        </scene>
+        <!--Going Out-->
+        <scene sceneID="W0v-SD-sNe">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="h8H-2W-rsx" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Going Out" image="GoingOut" id="wLs-Tn-5ba"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="kal-t2-FTn">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="bRg-eg-LlQ" kind="relationship" relationship="rootViewController" id="B1o-Ts-Orz"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6sq-rj-LX4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2065" y="58"/>
         </scene>
     </scenes>
     <resources>
