@@ -151,7 +151,7 @@
         <!--Capitals-->
         <scene sceneID="hxc-Ff-TMc">
             <objects>
-                <viewController id="zz8-zD-iHt" userLabel="Capitals" customClass="CapitalsViewController" customModule="Capitals" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="zz8-zD-iHt" userLabel="Capitals" customClass="CapitalsViewController" customModule="BirdGang" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="R3l-9i-1Lc" userLabel="Capitals View">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -232,7 +232,7 @@
     <resources>
         <image name="Combos" width="30" height="30"/>
         <image name="GoingOut" width="30" height="30"/>
-        <image name="Smash" width="90" height="90"/>
-        <image name="capitol" width="1200" height="1200"/>
+        <image name="Smash" width="30" height="30"/>
+        <image name="capitol" width="30" height="30"/>
     </resources>
 </document>
